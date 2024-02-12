@@ -1,0 +1,6 @@
+# Exclude folders
+build/
+node_modules/
+
+# Files
+package-lock.json

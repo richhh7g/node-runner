@@ -1,0 +1,51 @@
+{
+  "name": "node-runner-ts",
+  "version": "0.1.0",
+  "description": "Node runner is a powerful tool developed to optimize and speed up the process execution flow in your applications.",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "rimraf ./build && tsc --project tsconfig.prod.json",
+    "dev": "tsc-watch --onSuccess \"node -r ./tsconfig-paths.js build/index.js \" ",
+    "start": "node -r ./tsconfig-paths.js build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richhh7g/node-runner-ts.git"
+  },
+  "keywords": [
+    "Node.js",
+    "Process",
+    "Execution",
+    "Execution",
+    "Flow",
+    "Parallelism",
+    "Sequentiality",
+    "Task",
+    "Management",
+    "Performance",
+    "Scalability",
+    "Flexible",
+    "Architecture",
+    "Simple",
+    "Integration",
+    "Efficiency",
+    "Application",
+    "Development",
+    "Asynchronous",
+    "Programming"
+  ],
+  "author": "richhh7g <richhh7g@protonmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/richhh7g/node-runner-ts/issues"
+  },
+  "homepage": "https://github.com/richhh7g/node-runner-ts#readme",
+  "devDependencies": {
+    "@types/node": "20.11.17",
+    "rimraf": "5.0.5",
+    "tsc-watch": "6.0.4",
+    "tsconfig-paths": "4.2.0",
+    "typescript": "5.3.3"
+  },
+  "dependencies": {}
+}

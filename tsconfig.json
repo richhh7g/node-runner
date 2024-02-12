@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./lib",
+    "target": "ES2022",
+    "module": "commonjs",
+    "lib": ["ES2022", "esnext.asynciterable"],
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "noImplicitAny": false,
+    "useUnknownInCatchVariables": false,
+    "outDir": "./build",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "paths": {
+      "@test": ["./test"],
+      "@test/*": ["./test/*"]
+    }
+  },
+  "include": ["lib/**/*.ts"],
+  "exclude": ["node_modules", "build", "*.test.ts"]
+}
