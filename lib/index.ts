@@ -1,3 +1,2 @@
-export const Hello = () => {
-  console.log("Hello node-runner-ts");
-};
+export * from "./runner";
+export * from "./runner.type";
