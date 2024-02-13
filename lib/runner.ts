@@ -120,7 +120,7 @@ export class Runner {
    * each specifying the path to the module, arguments, and other options.
    *
    * @example
-   * Runner.parallelism([
+   * Runner.parallelism(
    *  {
    *    path: `./api/express-api`,
    *    args: extraParam,
@@ -130,7 +130,7 @@ export class Runner {
    *    path: "./graphql/apollo-runner",
    *    forever: true,
    *  }
-   * ])
+   * )
    */
   static async parallelism(...options: RunnerOptions[]): Promise<void> {
     const configurations: Array<{
