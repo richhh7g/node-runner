@@ -3,7 +3,7 @@
   "version": "0.5.0",
   "description": "Node runner is a powerful tool developed to optimize and speed up the process execution flow in your applications.",
   "main": "build/index.js",
-  "types": "./build/index.d.ts",
+  "types": "build/index.d.ts",
   "scripts": {
     "build": "rimraf ./build && tsc --project tsconfig.prod.json",
     "dev": "tsc-watch --onSuccess \"node -r ./tsconfig-paths.js build/index.js \" ",
